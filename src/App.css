@@ -1,5 +1,30 @@
-.App {
-  text-align: center;
+.site-logo {
+    position: relative;
+    float: left;
+    padding-right: 10px;
+    background: #0D6EFD;
+}
+.site-logo:before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 0%;
+  width: 1000px;
+  height: 100%;
+  background: #0D6EFD;
+}
+.site-logo:after {
+  content: '';
+  position: absolute;
+  left: 80%;
+  top: 0%;
+  width: 100px;
+  height: 100%;
+  background: #0D6EFD;
+  transform: skewX(
+-25deg);
+  -webkit-transform: skewX(
+-25deg);
 }
 
 .App-logo {
