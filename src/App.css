@@ -27,6 +27,16 @@
 -25deg);
 }
 
+.service-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 300ms;
+}
+.service-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.font-icon {
+  background-color: transparent;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
