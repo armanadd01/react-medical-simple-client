@@ -1,4 +1,5 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 
@@ -6,7 +7,7 @@ import useAuth from '../../../../hooks/useAuth';
 const PrivetRoute = ({ children, ...rest}) => {
     const {user, isLoading} = useAuth();
     if (isLoading) {
-        return <p>Loading</p>
+        return <Spinner animation="border" variant="primary" />
     }
  
     return (
