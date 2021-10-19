@@ -37,6 +37,11 @@
 .font-icon {
   background-color: transparent;
 }
+.login-bg {
+  background-image: url("./images/featured-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -4,10 +4,22 @@ import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 
 
-const PrivetRoute = ({ children, ...rest}) => {
+const PrivateRoute = ({ children, ...rest}) => {
     const {user, isLoading} = useAuth();
     if (isLoading) {
-        return <Spinner animation="border" variant="primary" />
+        return (
+          <div className="container text-center pt-5">
+            <Spinner animation="border" variant="primary" />
+            <h4>Please Login  
+              <small>
+              <Spinner className="mx-1" animation="grow" size="sm" />
+              <Spinner className="mx-1" animation="grow" size="sm" />
+              <Spinner className="mx-1" animation="grow" size="sm" />
+              </small>
+            </h4>
+          </div>
+        
+        )
     }
  
     return (
@@ -29,4 +41,4 @@ const PrivetRoute = ({ children, ...rest}) => {
     );
 };
 
-export default PrivetRoute;
+export default PrivateRoute;

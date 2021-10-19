@@ -9,6 +9,8 @@ import Services from './Components/Home/Services/Services';
 import Doctors from './Components/Home/Doctors/Doctors';
 import Login from './Components/Shared/Login/Login';
 import AuthProvider from './Context/AuthProvider';
+import DepartmentDetails from './Components/DepartmentDetails/DepartmentDetails';
+import PrivateRoute from './Components/Shared/Login/PrivetRoute/PrivateRoute';
 
 
 function App() {
@@ -33,6 +35,9 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
+          <PrivateRoute path="/service/:serviceId">
+              <DepartmentDetails></DepartmentDetails>
+            </PrivateRoute>
           <Route exact path="*">
             <PageNotFound></PageNotFound>
           </Route>

@@ -55,10 +55,15 @@ const Navbar = () => {
                                                     </NavLink>
 
                                                 }
-                                                <p>
-                                                    Signed in as: <a href="#login">{user?.displayName}</a>
-                                                </p>
+                                                
                                             </li>
+                                            { user?.email?
+                                                <li className="nav-item p-2">
+                                                    Signed in as: <a href="#login">{user?.displayName}</a>
+                                                </li>
+                                                :
+                                                ''
+                                            }
                                         </ul>
                                     </div>
                                     
