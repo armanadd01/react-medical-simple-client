@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Doctor = (props) => {
     const {key, name, img, specialty } = props.doctor
     return (
-        <div className="col-md-6 col-12 mt-5 ">
+        <div className="col-md-3 col-12 my-5 ">
             <Card  className="text-center border-0 h-100 service-card">
                 <Card.Img variant="top" className="images" src={img} />
                 <Card.Body>
