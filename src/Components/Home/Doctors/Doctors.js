@@ -15,7 +15,7 @@ const Doctors = () => {
             <div className="services">
                 <div className="container">
                     <div className="row service-section">
-                        <h1  className="py-5 my-5 border-bottom border-primary fs-3">Our Popular <span className="fs-2 fw-bold text-primary">Departments</span></h1>
+                        <h1  className="py-5 my-5 border-bottom border-primary fs-3">Our Popular <span className="fs-2 fw-bold bg-primary px-4 py-2 rounded text-light">Doctors</span></h1>
                         {
                             // map service data
                             doctors.map(doctor => <Doctor

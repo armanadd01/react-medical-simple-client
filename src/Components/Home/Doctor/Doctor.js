@@ -2,9 +2,10 @@ import { faHeartbeat } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Doctor = (props) => {
-    const {name, img, specialty } = props.doctor
+    const {key, name, img, specialty } = props.doctor
     return (
         <div className="col-md-6 col-12 mt-5 border-bottom ">
             <Card  className="text-center border-0 h-100">
@@ -18,7 +19,10 @@ const Doctor = (props) => {
                 </Card.Body>
                 
                 <Card.Body>
-                    <Button variant="outline-primary">Learn More</Button>
+                    <Link to={`/doctor/${key}`}>
+                        <Button variant="outline-primary">Learn More</Button>
+                    </Link>
+                    
                 </Card.Body>
             </Card>
         </div>

@@ -31,13 +31,13 @@ const Navbar = () => {
                                     <div className="col-md-6">
                                         <ul className="navbar-nav ">
                                             <li className="nav-item p-2">
-                                                <NavLink activeClassName="bg-secondary text-light" className="nav-link fs-6" to="/home">Home</NavLink>
+                                                <NavLink activeClassName="bg-primary text-light" className="nav-link fs-6" to="/home">Home</NavLink>
                                             </li>
                                             <li className="nav-item p-2">
-                                                <NavLink activeClassName="bg-secondary text-light" className="nav-link fs-6" to="/services">Departments</NavLink>
+                                                <NavLink activeClassName="bg-primary text-light" className="nav-link fs-6" to="/services">Departments</NavLink>
                                             </li>
                                             <li className="nav-item p-2">
-                                                <NavLink activeClassName="bg-secondary text-light" className="nav-link fs-6" to="/doctors">Doctors</NavLink>
+                                                <NavLink activeClassName="bg-primary text-light" className="nav-link fs-6" to="/doctors">Doctors</NavLink>
                                             </li>
                                         </ul>
                                     </div>

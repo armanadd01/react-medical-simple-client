@@ -11,6 +11,7 @@ import AuthProvider from './Context/AuthProvider';
 import DepartmentDetails from './Components/DepartmentDetails/DepartmentDetails';
 import PrivateRoute from './Components/Shared/Login/PrivetRoute/PrivateRoute';
 import Page404 from './Components/Shared/404/404';
+import Doctordetails from './Components/DoctorDetails/Doctordetails';
 
 function App() {
   return (
@@ -36,7 +37,10 @@ function App() {
           </Route>
           <PrivateRoute path="/service/:serviceId">
               <DepartmentDetails></DepartmentDetails>
-            </PrivateRoute>
+          </PrivateRoute>
+          <PrivateRoute path="/doctor/:doctorId">
+              <Doctordetails></Doctordetails>
+          </PrivateRoute>
           <Route exact path="*">
             <Page404></Page404>
           </Route>

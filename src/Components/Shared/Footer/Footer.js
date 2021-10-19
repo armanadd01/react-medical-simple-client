@@ -1,4 +1,8 @@
+import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Button, ListGroup } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import './Footer.css';
 const Footer = () => {
     return (
@@ -6,22 +10,24 @@ const Footer = () => {
             <footer className="footer-20192">
                 <div className="site-section">
                     <div className="container">
-
-                    <div className="cta d-block d-md-flex align-items-center px-5">
-                        <div>
-                        <h2 className="mb-0">Ready for a next project?</h2>
-                        <h3 className="text-dark">Let's get started!</h3>
+                    <div className="cta row text-center justify-content-center px-5">
+                        <div className="col-md-12 mx-auto">
+                            <h2 className="mb-0">Ready for a next project?</h2>
+                            <h3 className="text-dark">Let's get started!</h3>
                         </div>
-                        <div className="ml-auto">
-                        <a href="#" className="btn btn-dark rounded-0 py-3 px-5">Contact us</a>
+                        <div className="col-md-12 mx-auto">
+                            <a href="#" className="btn btn-dark rounded-0 py-3 px-5">Contact us</a>
                         </div>
                     </div>
                     <div className="row">
 
                         <div className="col-sm">
-                        <a href="#" className="footer-logo">Colorlib</a>
+                            <NavLink activeClassName=" text-light" className="nav-link fs-6" to="/home">
+                                <p className="text-light fw-bold fs-3">Medical Health care</p>
+                            </NavLink>
+                        
                         <p className="copyright">
-                            <small>&copy; 2019</small>
+                            <small>&copy; 2021</small>
                         </p>
                         </div>
                         <div className="col-sm">
@@ -48,13 +54,12 @@ const Footer = () => {
                         </div>
                         <div className="col-md-3">
                         <h3>Follow us</h3>
-                        <ul className="list-unstyled social">
-                            <li><a href="#"><span className="icon-facebook"></span></a></li>
-                            <li><a href="#"><span className="icon-twitter"></span></a></li>
-                            <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                            <li><a href="#"><span className="icon-medium"></span></a></li>
-                            <li><a href="#"><span className="icon-paper-plane"></span></a></li>
-                        </ul>
+                            <ListGroup className="bg-transparent" horizontal>
+                                <ListGroup.Item className="bg-transparent"><FontAwesomeIcon className="text-primary fs-3" icon={faFacebook}></FontAwesomeIcon></ListGroup.Item>
+                                <ListGroup.Item className="bg-transparent"><FontAwesomeIcon className="text-danger fs-3" icon={faInstagram}></FontAwesomeIcon></ListGroup.Item>
+                                <ListGroup.Item className="bg-transparent"><FontAwesomeIcon className="text-danger fs-3" icon={faYoutube}></FontAwesomeIcon></ListGroup.Item>
+                                
+                            </ListGroup>
                         </div>
                         
                     </div>

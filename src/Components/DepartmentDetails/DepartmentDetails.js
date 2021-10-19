@@ -19,8 +19,8 @@ const DepartmentDetails = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <h2 className="text-primary">Name of department: {ExactIteam[0]?.name}</h2>
-                        <h4 className="text-secondary">Short Description: {ExactIteam[0]?.short}</h4>
+                        <h2 className="text-primary"> <span>Name of department:</span> {ExactIteam[0]?.name}</h2>
+                        <h4 className="text-secondary"><span>Short Description:</span>  {ExactIteam[0]?.short}</h4>
                         <p>Description : {ExactIteam[0]?.description}</p>
                     </div>
                     <div className="col-md-6">
