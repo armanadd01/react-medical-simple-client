@@ -13,7 +13,6 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
 
-    console.log(user);
 
     const googleLogIn = () => {
         setIsLoading(true)
@@ -44,7 +43,6 @@ const useFirebase = () => {
 
   const handleRegistration = e => {
     e.preventDefault();
-    console.log(email, password);
     if (password.length < 6) {
       setError('Password Must be at least 6 characters long.')
       return;
@@ -68,7 +66,6 @@ const useFirebase = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then(result => {
         const user = result.user;
-        console.log(user);
         setUser(user);
         setError('');
         
@@ -82,7 +79,6 @@ const useFirebase = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then(result => {
         const user = result.user;
-        console.log(user);
         setError('');
         verifyEmail();
         setUserName();
@@ -100,7 +96,6 @@ const useFirebase = () => {
   const verifyEmail = () => {
     sendEmailVerification(auth.currentUser)
       .then(result => {
-        console.log(result);
       })
   }
 

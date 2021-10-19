@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Doctor = (props) => {
     const {key, name, img, specialty } = props.doctor
     return (
-        <div className="col-md-6 col-12 mt-5 border-bottom ">
-            <Card  className="text-center border-0 h-100">
+        <div className="col-md-6 col-12 mt-5 ">
+            <Card  className="text-center border-0 h-100 service-card">
                 <Card.Img variant="top" className="images" src={img} />
                 <Card.Body>
                     <Card.Title classNa  me=" p-3 h-25 w-25 m-auto text-center align-middle"><FontAwesomeIcon  color="#267AEB" icon={faHeartbeat}></FontAwesomeIcon></Card.Title>

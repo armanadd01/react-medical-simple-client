@@ -18,9 +18,9 @@ const Banner = () => {
                 src="http://hasan.themexlab.com/new/hope-medical/hope-medical/images/main-slider/3.jpg"
                 alt="First slide"
                 />
-                <Carousel.Caption>
-                <h3>WE SET THE STANDARDS</h3>
-                <p>OTHERS TRY TO LIVE UP TO</p>
+                <Carousel.Caption className="py-5">
+                <h1 className="py-5">Best Medical Hospital</h1>
+                <p>Living is Rights</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -30,9 +30,9 @@ const Banner = () => {
                 alt="Second slide"
                 />
 
-                <Carousel.Caption>
-                <h3>WE SET THE STANDARDS</h3>
-                <p>OTHERS TRY TO LIVE UP TO</p>
+                <Carousel.Caption className="py-5">
+                <h1 className="py-5">Mesical Health Care</h1>
+                <p>Slow And stedy wins the race</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -42,10 +42,10 @@ const Banner = () => {
                 alt="Third slide"
                 />
 
-                <Carousel.Caption>
-                <h3>WE SET THE STANDARDS</h3>
+                <Carousel.Caption className="py-5">
+                <h1 className="py-5">Health Comes First</h1>
                 <p>
-                OTHERS TRY TO LIVE UP TO
+                Stay Foolish Shay Hungry
                 </p>
                 </Carousel.Caption>
             </Carousel.Item>
