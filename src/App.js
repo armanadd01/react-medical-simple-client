@@ -10,6 +10,7 @@ import Login from './Components/Shared/Login/Login';
 import AuthProvider from './Context/AuthProvider';
 import DepartmentDetails from './Components/DepartmentDetails/DepartmentDetails';
 import PrivateRoute from './Components/Shared/Login/PrivetRoute/PrivateRoute';
+import Page404 from './Components/Shared/404/404';
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
               <DepartmentDetails></DepartmentDetails>
             </PrivateRoute>
           <Route exact path="*">
-            {/* <NotFound></NotFound> */}
+            <Page404></Page404>
           </Route>
         </Switch>
         <Footer></Footer>

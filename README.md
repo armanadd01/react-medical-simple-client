@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Medical Health Care Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project deployed on [FireBase: https://medical-healthcare-assign.web.app/](https://medical-healthcare-assign.web.app/).
 
-## Available Scripts
+## 
 
-In the project directory, you can run:
+In the project src folder user can find a component folder, 
+Here some short description or details of those folders
 
-### `npm start`
+### `App.js`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In `App.js` file you can see the Router of this website. I just simply rename the `BrowserRoter as Router` and I use Header Component before the `Switch` and footer after the `Switch` for show in all pages.I use `Navlink` instant of a tag for load the data without loading the site. And also use a private route for not accesable component 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `Header`
 
-### `npm test`
+In Header Component, site details added. 
+user can fiend here Two Services header div. One is `top-header` and `header-bottom`
+`top-header` contain Header information like "The porupose of this project total Budget of the concert and a short text about project" and `header-bottom` contain site logo and navigation and as well as login button. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `Services`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In `Services` component lots of thing added here. 
+In this component all the  `JSON` data fetched here by using `useState` and `useEffect`
+This Services component pass data to `Service`.
+On `return` of data I returned `Service` component data under the hood of Service-container by using `.map` method and pass a unique key. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Doctor`
 
-### `npm run eject`
+This `Doctor` component is one of the Services component of this projects here user shaw Teacher/trainer information. 
+This Component can .map an array and pass data to `Doctor` component. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `Service Details`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This `ServiceDetails` is a private component nobody can access this component without log in. when a user log in into the site user can able t access the service details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `Login`
+This `Login` component can helps a user to log/sign into the site. Two types of log in and authentication are used in  site. one is email password based login/sign in and other is google based log in. when a user first visit the sure user can register. 
 
-## Learn More
+**Note:  `Firebase` Authentication are used for user Authentication and Authorization**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This `About` component can show up the About data and Teacher data as well. 
+user can shaw 3 data updated
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+for icon  I use `FontAwesome` . And for Css I use `React-Bootstrao` and I also added some custom css. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Thanks Giving
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Thanks for visiting my 1st react project :smiley: :smiley: :smiley:**
