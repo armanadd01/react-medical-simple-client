@@ -13,7 +13,7 @@ const Service = (props) => {
             <Card  className="text-center border-0 h-100 service-card">
                 <Card.Img variant="top" className="images" src={img} />
                 <Card.Body>
-                    <Card.Title ><FontAwesomeIcon className="font-icon" color="#267AEB" icon={faHeartbeat}></FontAwesomeIcon></Card.Title>
+                    <Card.Title ><FontAwesomeIcon className="font-icon position-absolute" color="#267AEB" icon={faHeartbeat}></FontAwesomeIcon></Card.Title>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
                     {short}

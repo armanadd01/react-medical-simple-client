@@ -27,7 +27,7 @@ const Footer = () => {
                             </NavLink>
                         
                         <p className="copyright">
-                            <small>&copy; 2021</small>
+                            <small>&copy; 2021. All Copy rights reserve to arman and Medical Health Care</small>
                         </p>
                         </div>
                         <div className="col-sm">

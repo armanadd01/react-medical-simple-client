@@ -19,7 +19,9 @@ const Navbar = () => {
                         <div className="navbar navbar-expand-md navbar-light w-100 m-0 p-0">
                             <div className="col-md-4 m-0 p-0 ">
                                 <div className="navbar-brand m-0 p-0 site-logo" >
+                                <NavLink activeClassName=" text-light" className="nav-link fs-6" to="/home">
                                     <img className="w-75" src={logoImg} alt="" />
+                                </NavLink>
                                 </div>
                             </div>
                             <div className="col-md-8">

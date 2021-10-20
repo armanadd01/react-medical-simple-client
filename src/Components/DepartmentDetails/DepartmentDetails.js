@@ -13,14 +13,15 @@ const DepartmentDetails = () => {
     const ExactIteam = data.filter(td => td.key === serviceId);
     return (
         <div className="container-fluid">
-            <div className="header py-5">
-            <h1  className="py-5 my-5 border-bottom border-primary fs-3"> <span className="fs-2 fw-bold text-light bg-danger border-rounded p-2">{ExactIteam[0]?.name}</span></h1>
+            <div className="header py-5 border-bottom border-primary">
+                <h5 className=" text-secondary  fs-6">WE CARE OUR DEPARTMENT SUPPORT</h5>
+                <h1  className=" fs-3">OUR OUTSTANDING<span className="fs-2 fw-bold text-primary p-2">{ExactIteam[0]?.name}</span></h1>
             </div>
-            <div className="container">
+            <div className="container mt-5">
                 <div className="row">
                     <div className="col-md-6">
                         <h2 className="text-primary"> <span>Name of department:</span> {ExactIteam[0]?.name}</h2>
-                        <h4 className="text-secondary"><span>Short Description:</span>  {ExactIteam[0]?.short}</h4>
+                        <h4 className="text-secondary">Short Description: <span className="fst-italic fw-light">{ExactIteam[0]?.short}</span></h4>
                         <p>Description : {ExactIteam[0]?.description}</p>
                     </div>
                     <div className="col-md-6">

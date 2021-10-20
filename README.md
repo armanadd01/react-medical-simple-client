@@ -35,6 +35,9 @@ This Component can .map an array and pass data to `Doctor` component.
 
 This `ServiceDetails` is a private component nobody can access this component without log in. when a user log in into the site user can able t access the service details.
 
+### `Doctor Details`
+
+This `Doctor Details` is a private component nobody can access this component without log in. when a user log in into the site user can able t access the doctor details.
 
 ### `Login`
 This `Login` component can helps a user to log/sign into the site. Two types of log in and authentication are used in  site. one is email password based login/sign in and other is google based log in. when a user first visit the sure user can register. 
@@ -49,4 +52,4 @@ for icon  I use `FontAwesome` . And for Css I use `React-Bootstrao` and I also a
 
 ## Thanks Giving
 
-**Thanks for visiting my 1st react project :smiley: :smiley: :smiley:**
+**Thanks for visiting my react authentication project:smiley: :smiley: :smiley:**

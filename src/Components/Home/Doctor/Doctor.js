@@ -11,7 +11,7 @@ const Doctor = (props) => {
             <Card  className="text-center border-0 h-100 service-card">
                 <Card.Img variant="top" className="images" src={img} />
                 <Card.Body>
-                    <Card.Title classNa  me=" p-3 h-25 w-25 m-auto text-center align-middle"><FontAwesomeIcon  color="#267AEB" icon={faHeartbeat}></FontAwesomeIcon></Card.Title>
+                    <Card.Title classNa  me=" p-3 h-25 w-25 m-auto text-center align-middle"><FontAwesomeIcon className="font-icon-two position-absolute" color="#267AEB" icon={faHeartbeat}></FontAwesomeIcon></Card.Title>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
                     {specialty}
