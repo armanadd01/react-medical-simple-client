@@ -16,19 +16,23 @@ const Navbar = () => {
                     {/* Site logo */}
                     
                         <div className="navbar navbar-expand-md navbar-light w-100 m-0 p-0">
-                            <div className="col-md-4 m-0 p-0 ">
-                                <div className="navbar-brand m-0 p-0 site-logo" >
+                            <div className="col-md-4 col-sm-8 m-0 p-0 ">
+                                <div className="navbar-brand m-0 p-0 site-logo me-sm-5" >
                                 <NavLink activeClassName=" text-light" className="nav-link fs-6" to="/home">
                                     <img className="w-75" src={logoImg} alt="" />
                                 </NavLink>
                                 </div>
+                                
                             </div>
-                            <div className="col-md-8">
-                                {/* Navigation bar */}
-                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span className="navbar-toggler-icon"></span>
+                            <div className="col-sm-4 d-md-none">
+                                <button className="navbar-toggler ms-5 mt-4 align-sm-middle text-sm-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
                                 </button>
-                                <nav className="collapse navbar-collapse p-md-0 p-3 text-end" id="navbarNav">
+                            </div>
+                            <div className="col-md-8 col-sm-12 ">
+                                {/* Navigation bar */}
+                                
+                            <nav className="collapse navbar-collapse p-md-0 p-3 text-center" id="navbarNav">
                                     <div className="col-md-6">
                                         <ul className="navbar-nav ">
                                             <li className="nav-item p-2">
