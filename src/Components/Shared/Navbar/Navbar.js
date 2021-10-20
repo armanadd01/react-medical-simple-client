@@ -46,7 +46,7 @@ const Navbar = () => {
                                         <ul className="navbar-nav ">
                                             
                                             <li className="nav-item p-2">
-                                            { user?.email?
+                                            { user?.displayName?
                                                     <NavLink to="/login">
                                                     <button onClick={logOut} className="btn btn-warning me-2" >Log-out</button>
                                                     </NavLink>
@@ -54,11 +54,10 @@ const Navbar = () => {
                                                     <NavLink to="/login">
                                                     <button className="btn btn-warning me-2" >Log In</button>
                                                     </NavLink>
-
                                                 }
                                                 
                                             </li>
-                                            { user?.email?
+                                            { user?.displayName?
                                                 <li className="nav-item p-2">
                                                     Signed in as: <a href="#login">{user?.displayName}</a>
                                                 </li>
