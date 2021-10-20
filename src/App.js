@@ -11,12 +11,14 @@ import AuthProvider from './Context/AuthProvider';
 import DepartmentDetails from './Components/DepartmentDetails/DepartmentDetails';
 import PrivateRoute from './Components/Shared/Login/PrivetRoute/PrivateRoute';
 import Page404 from './Components/Shared/404/404';
-import Doctordetails from './Components/DoctorDetails/Doctordetails';
+import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 
 function App() {
   return (
     <div className="App">
+      {/* Auth provider */}
       <AuthProvider>
+        {/* React Router */}
       <Router>
         <Header></Header>
         <Switch>
@@ -35,11 +37,12 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
+          {/* Private Route */}
           <PrivateRoute path="/service/:serviceId">
               <DepartmentDetails></DepartmentDetails>
           </PrivateRoute>
           <PrivateRoute path="/doctor/:doctorId">
-              <Doctordetails></Doctordetails>
+              <DoctorDetails></DoctorDetails>
           </PrivateRoute>
           <Route exact path="*">
             <Page404></Page404>

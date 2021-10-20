@@ -3,6 +3,7 @@ import notFound from '../../../images/notfound.jpg';
 
 const Page404 = () => {
     return (
+        // Error 404 NotFound page
         <div className=" mx-auto text-center">
             <img className="img-fluid mx-auto w-100 h-100" src={notFound} alt="" />
         </div>

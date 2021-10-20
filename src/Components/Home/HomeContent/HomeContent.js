@@ -4,6 +4,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 const HomeContent = () => {
     return (
         <div>
+            {/* Home Details Section */}
             <div className="home-content">
             <Container className="py-5">
                 <Row>

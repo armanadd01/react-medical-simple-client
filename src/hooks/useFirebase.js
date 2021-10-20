@@ -13,7 +13,7 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
 
-
+    // Google Log In
     const googleLogIn = () => {
         setIsLoading(true)
         const googleProvider = new GoogleAuthProvider();
@@ -25,22 +25,23 @@ const useFirebase = () => {
             })
             .finally(() => setIsLoading(false));
     }
-    
+    // email Log in and registration toggle
   const toggleLogin = e => {
     setIsLogin(e.target.checked)
   }
-
+  // name change 
   const handleNameChange = e => {
     setName(e.target.value);
   }
+  // email change
   const handleEmailChange = e => {
     setEmail(e.target.value);
   }
-
+  //change password
   const handlePasswordChange = e => {
     setPassword(e.target.value)
   }
-
+  //Handle Registration
   const handleRegistration = e => {
     e.preventDefault();
     if (password.length < 6) {
@@ -51,7 +52,7 @@ const useFirebase = () => {
       setError('Password Must contain 2 upper case');
       return;
     }
-
+    // log in
     if (isLogin) {
       processLogin(email, password);
     }
@@ -60,7 +61,7 @@ const useFirebase = () => {
     }
 
   }
-
+  // prosession log in
   const processLogin = (email, password) => {
     setIsLoading(true)
     signInWithEmailAndPassword(auth, email, password)
@@ -71,10 +72,10 @@ const useFirebase = () => {
         
       })
       .catch(error => {
-        setError(error.message);
+        setError('User name or password not matched');
       })
   }
-
+  // register new user
   const registerNewUser = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then(result => {
@@ -92,18 +93,18 @@ const useFirebase = () => {
     updateProfile(auth.currentUser, { displayName: name })
       .then(result => { })
   }
-
+  // Varify email
   const verifyEmail = () => {
     sendEmailVerification(auth.currentUser)
       .then(result => {
       })
   }
-
+  // Handle reset pass
   const handleResetPassword = () => {
     sendPasswordResetEmail(auth, email)
       .then(result => { })
   }
-
+    // use effect for logged in
     useEffect(() => {
       const unsubcribed = onAuthStateChanged(auth, (user) => {
           if (user) {
@@ -115,20 +116,20 @@ const useFirebase = () => {
       });
       return () => unsubcribed;
   }, [isLoading])
-  
+  // log out user 
     const logOut = () => {
         setIsLoading(true)
         signOut(auth).then(() => { })
         .finally(() => setIsLoading(false))
     }
+    // return all variable and state
     return {
         user,
         isLogin,
         name,
         email,
         password,
-        isLogin,
-        
+        error,
         handlePasswordChange,
         googleLogIn,
         isLoading,
@@ -140,7 +141,7 @@ const useFirebase = () => {
         processLogin, 
         handleResetPassword,
         handleEmailChange,
-        // verifyEmail
+        verifyEmail
     }
 
 };

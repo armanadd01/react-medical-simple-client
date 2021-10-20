@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
 const DepartmentDetails = () => {
+    
     const { serviceId } = useParams();
+    //Fetching data
     const [data , setData] = useState([]);
     useEffect(()=>{
         fetch('/fakeData.json')
@@ -12,6 +14,7 @@ const DepartmentDetails = () => {
 
     const ExactIteam = data.filter(td => td.key === serviceId);
     return (
+        // Department Service Details
         <div className="container-fluid">
             <div className="header py-5 border-bottom border-primary">
                 <h5 className=" text-secondary  fs-6">WE CARE OUR DEPARTMENT SUPPORT</h5>

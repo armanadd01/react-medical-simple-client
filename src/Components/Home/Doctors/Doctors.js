@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Doctor from '../Doctor/Doctor';
 
 const Doctors = () => {
+    //Fatching Date
     const [doctors, setDoctor] = useState([]);
 
     useEffect(()=>{
@@ -11,7 +12,7 @@ const Doctors = () => {
     },[])
     return (
         <div>
-            <div>
+            {/* Service All Card */}
             <div className="services">
                 <div className="container">
                     <div className="row service-section">
@@ -32,7 +33,7 @@ const Doctors = () => {
                 </div>
             </div>
         </div>
-        </div>
+        
     );
 };
 

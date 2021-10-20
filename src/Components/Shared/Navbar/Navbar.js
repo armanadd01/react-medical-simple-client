@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavbarBrand } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import logoImg from '../../../images/logo.png';
@@ -7,11 +6,11 @@ import logoImg from '../../../images/logo.png';
 
 const Navbar = () => {
     const { user, logOut } = useAuth();
-    console.log(user?.email);
     
     
     return (
         <>
+        {/* Navber */}
             <div className="header-bottom w-100">
                 <div className="">
                     {/* Site logo */}

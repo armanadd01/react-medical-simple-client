@@ -2,12 +2,12 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import useAuth from '../../../hooks/useAuth';
- import BannerImage from '../../../images/featured-image.jpg'
 
 const Login = () => {
     const {googleLogIn, handleResetPassword, handleNameChange ,handleEmailChange,handlePasswordChange, isLogin, handleRegistration, toggleLogin, error} = useAuth();
     
     return (
+      // Login page
         <div className="login-bg p-5">
           <div className="container my-5 ">
               <div className="row align-items-center " style={{ height: "100vh" }}>
@@ -55,8 +55,8 @@ const Login = () => {
                       </div>
                   </div>
                   <div className="col-md-6 d-none d-md-block h-50 bg-danger">
-                    <div class="text-wrap p-4 p-lg-5 text-center">
-                      <div class="text-light w-100 align-middle">
+                    <div className="text-wrap p-4 p-lg-5 text-center">
+                      <div className="text-light w-100 align-middle">
                         <h2 className="fs-1 ">Welcome to login</h2>
                         <p>Don't have an account?</p>
                         <p>Please Uncheck the Input Field And Register</p>

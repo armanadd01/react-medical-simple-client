@@ -9,7 +9,6 @@ const Services = () => {
         fetch('./fakeData.json')
         .then(res => res.json())
         .then(data => setDepartment(data.departments))
-        console.log(departments)
     },[])
     return (
         <div>

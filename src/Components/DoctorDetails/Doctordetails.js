@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
-const Doctordetails = () => {
+const DoctorDetails = () => {
     const { doctorId } = useParams();
+    //Fatching Data
     const [data , setData] = useState([]);
     useEffect(()=>{
         fetch('/fakeData.json')
@@ -12,7 +13,7 @@ const Doctordetails = () => {
     },[])
     const ExactIteam = data.filter(td => td.key === doctorId);
     return (
-        
+        // Doctors Details
         <div>
             <Container className="py-5">
                 <Row>
@@ -39,4 +40,4 @@ const Doctordetails = () => {
     );
 };
 
-export default Doctordetails;
+export default DoctorDetails;

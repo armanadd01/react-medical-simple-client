@@ -10,6 +10,7 @@ const Banner = () => {
 
   return (
     <>
+    {/* Home Banner Slider */}
     <div className="h-50 banner">
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>

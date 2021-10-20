@@ -4,7 +4,7 @@ import Navbar from '../Navbar/Navbar';
 const Header = () => {
     return (
         <div>
-            
+            {/* Header top Component */}
             <div className="container-fluid">
                 <div className="row header-top d-lg-flex d-none bg-dark border-bottom border-secondary text-secondary">
                     <div className=" col-md-6">

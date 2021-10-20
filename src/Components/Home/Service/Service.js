@@ -8,7 +8,7 @@ import { Button, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 const Service = (props) => {
     const {key, name, img, short } = props.department
     return (
-        // Sercice Component
+        // Service Single Card
         <div className="col-md-4 col-12 mt-5  ">
             <Card  className="text-center border-0 h-100 service-card">
                 <Card.Img variant="top" className="images" src={img} />

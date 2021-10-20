@@ -5,9 +5,11 @@ import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Doctor = (props) => {
+    // Destructureing Doctors data
     const {key, name, img, specialty } = props.doctor
     return (
         <div className="col-md-3 col-12 my-5 ">
+            {/* Doctor Single Card */}
             <Card  className="text-center border-0 h-100 service-card">
                 <Card.Img variant="top" className="images" src={img} />
                 <Card.Body>
